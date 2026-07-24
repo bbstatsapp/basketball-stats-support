@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Basketball Stats Readerの使い方。受け取った.bbstats／.bbplayerの読み込み、閲覧、再共有、削除と復元を説明します。">
+  <meta name="theme-color" content="#087ff5">
+  <title>Readerの使い方｜Basketball Stats</title>
+  <link rel="icon" href="assets/images/reader-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/reader-icon.png" alt="" width="38" height="38">
+        <span>Basketball Stats<small>使い方ガイド</small></span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="writer.html">Writer</a>
+        <a href="reader.html" aria-current="page">Reader</a>
+        <a href="sharing.html">共有</a>
+        <a href="faq.html">よくある質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container page-hero">
+      <nav class="breadcrumbs" aria-label="パンくずリスト">
+        <a href="index.html">サポート</a><span aria-hidden="true">/</span><span>Reader</span>
+      </nav>
+      <p class="eyebrow">iPhone / iPadで見る</p>
+      <h1>Readerの使い方</h1>
+      <p class="page-summary">
+        Writerから受け取った.bbstats／.bbplayerを読み込み、試合や選手のスタッツを閲覧します。
+        Readerでは試合内容を編集しません。
+      </p>
+      <nav class="anchor-nav" aria-label="ページ内ナビゲーション">
+        <a href="#receive">受け取る</a>
+        <a href="#import">読み込む</a>
+        <a href="#games">試合を見る</a>
+        <a href="#players">選手を見る</a>
+        <a href="#share">再共有</a>
+        <a href="#trash">削除・復元</a>
+      </nav>
+    </section>
+
+    <div class="container guide-layout">
+      <aside class="guide-toc" aria-label="目次">
+        <strong>このページの内容</strong>
+        <a href="#receive">1. ファイルを受け取る</a>
+        <a href="#import">2. Readerへ読み込む</a>
+        <a href="#games">3. 試合を見る</a>
+        <a href="#players">4. 選手を見る</a>
+        <a href="#share">5. 再共有する</a>
+        <a href="#trash">6. 削除・復元</a>
+      </aside>
+
+      <div class="guide-content">
+        <section class="guide-section" id="receive">
+          <h2>1. ファイルを受け取る</h2>
+          <p>
+            Readerは、Writerが書き出した.bbstatsまたは.bbplayerを読み込みます。
+            Files、AirDrop、メール、メッセージなど、iOSの共有機能を使って受け取れます。
+          </p>
+          <div class="feature-list">
+            <div class="feature-item"><strong>.bbstats</strong><span>1試合分のチーム・選手・イベント・box score</span></div>
+            <div class="feature-item"><strong>.bbplayer</strong><span>1選手分の複数試合成績とシュート位置</span></div>
+          </div>
+          <div class="warning">
+            <strong>拡張子だけを変更しても読み込めません</strong>
+            共有ファイルは専用形式で暗号化・検証されています。WriterまたはReaderから書き出されたファイルを使用してください。
+          </div>
+        </section>
+
+        <section class="guide-section" id="import">
+          <h2>2. Readerへ読み込む</h2>
+          <h3>Readerからファイルを選ぶ</h3>
+          <ol>
+            <li>Readerを開きます。</li>
+            <li>空の画面では「ファイルを選択」、取り込み後は右上の読み込みボタンを選びます。</li>
+            <li>Filesから.bbstatsまたは.bbplayerを選びます。</li>
+            <li>検証が完了すると、試合別または選手別へ追加されます。</li>
+          </ol>
+          <p>複数の対応ファイルを一度に選んで、まとめて読み込むこともできます。</p>
+
+          <h3>受け取った場所から直接開く</h3>
+          <p>
+            FilesやAirDropなどでファイルを選び、「Basketball Stats Readerで開く」を選ぶ方法もあります。
+            Readerが起動し、検証後にライブラリへ保存します。
+          </p>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/reader-empty.png">
+                <img src="assets/images/reader-empty.png" alt="試合データを読み込む前のReader画面" width="1668" height="2420">
+              </a>
+              <figcaption>読み込み前のReader。「ファイルを選択」から始めます。</figcaption>
+            </figure>
+          </div>
+          <div class="tip">
+            <strong>同じファイルをもう一度読み込んだ場合</strong>
+            同じ内容は重複保存されません。同じ試合IDで内容が異なる場合は、置き換えるか確認します。
+          </div>
+        </section>
+
+        <section class="guide-section" id="games">
+          <h2>3. 試合スタッツを見る</h2>
+          <p>
+            「試合別」には、読み込んだ試合が新しい順に表示されます。カードをタップすると試合詳細を開きます。
+          </p>
+          <div class="screenshot-grid">
+            <figure class="screenshot">
+              <a href="assets/images/reader-library.png">
+                <img src="assets/images/reader-library.png" alt="試合を読み込んだReaderのライブラリ画面" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>試合別ライブラリ。カードには対戦名、日時、最終スコアを表示します。</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <a href="assets/images/reader-game-detail.png">
+                <img src="assets/images/reader-game-detail.png" alt="Readerで表示した試合スタッツ詳細" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>試合詳細。Writerと同じ情報構造でスタッツを確認できます。</figcaption>
+            </figure>
+          </div>
+          <p>
+            試合詳細では、最終スコア、試合評価、チーム合計、選手別box score、シュートチャートを確認できます。
+            表示範囲は全体、各クオーター、前半、後半へ切り替えられます。
+          </p>
+        </section>
+
+        <section class="guide-section" id="players">
+          <h2>4. 選手スタッツを見る</h2>
+          <ol>
+            <li>画面上部で「選手別」を選びます。</li>
+            <li>選手名で検索したり、チームで絞り込んだりします。</li>
+            <li>選手をタップし、平均、試合別成績、ゾーン、密度を確認します。</li>
+          </ol>
+          <p>
+            読み込んだ複数試合と.bbplayerを横断して集計します。同じ試合・同じ選手のデータは
+            一度だけ数えるため、あとから完全な試合ファイルを読み込んでも二重計上しません。
+          </p>
+          <div class="tip">
+            <strong>別のIDを持つ同一選手</strong>
+            名前や背番号が同じでも自動統合しません。必要な場合は選手統合画面で明示的にまとめられ、後から分離もできます。
+          </div>
+        </section>
+
+        <section class="guide-section" id="share">
+          <h2>5. 取り込んだデータを再共有する</h2>
+          <p>
+            右上の共有ボタンから複数の試合または選手を選び、再度書き出せます。
+            Readerは内容を編集せず、受け取ったデータを同じ形式で共有します。
+          </p>
+          <ol>
+            <li>「試合別」または「選手別」を選びます。</li>
+            <li>右上の共有ボタンを選びます。</li>
+            <li>共有する項目へチェックを付けます。</li>
+            <li>Files、AirDrop、メールなどの共有先を選びます。</li>
+          </ol>
+        </section>
+
+        <section class="guide-section" id="trash">
+          <h2>6. 削除・復元する</h2>
+          <p>
+            試合一覧で左へスワイプすると、ファイルをゴミ箱へ移動できます。
+            右上のゴミ箱から復元または完全削除を選べます。
+          </p>
+          <div class="warning">
+            <strong>「ゴミ箱を空にする」は取り消せません</strong>
+            復元が必要ないことを確認してから完全削除してください。
+          </div>
+          <p>
+            .bbplayer由来の選手データもゴミ箱へ移動できます。同じ選手に試合由来の成績がある場合は、
+            .bbplayerを削除しても試合から得た成績は残ります。
+          </p>
+          <div class="button-row">
+            <a class="button" href="sharing.html">共有形式を詳しく見る</a>
+            <a class="button secondary" href="faq.html">困ったときはこちら</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><p class="footer-title">Basketball Stats</p><p>Writer／Reader 公式使い方ガイド・サポート</p></div>
+        <div class="footer-links"><p class="footer-title">使い方</p><a href="writer.html">Writer</a><a href="reader.html">Reader</a><a href="sharing.html">ファイル共有</a></div>
+        <div class="footer-links"><p class="footer-title">サポート</p><a href="faq.html">よくある質問</a><a href="contact.html">お問い合わせ</a></div>
+        <div class="footer-links"><p class="footer-title">ポリシー</p><a href="privacy.html">プライバシーポリシー</a></div>
+      </div>
+      <p class="footer-note">© 2026 Basketball Stats. 掲載画面はシミュレーター上のデモデータです。</p>
+    </div>
+  </footer>
+</body>
+</html>

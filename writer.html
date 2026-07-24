@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Basketball Stats Writerの使い方。チーム登録、試合設定、ライブ記録、保存、スタッツ閲覧、共有までを実画面で説明します。">
+  <meta name="theme-color" content="#087ff5">
+  <title>Writerの使い方｜Basketball Stats</title>
+  <link rel="icon" href="assets/images/writer-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/writer-icon.png" alt="" width="38" height="38">
+        <span>Basketball Stats<small>使い方ガイド</small></span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="writer.html" aria-current="page">Writer</a>
+        <a href="reader.html">Reader</a>
+        <a href="sharing.html">共有</a>
+        <a href="faq.html">よくある質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container page-hero">
+      <nav class="breadcrumbs" aria-label="パンくずリスト">
+        <a href="index.html">サポート</a><span aria-hidden="true">/</span><span>Writer</span>
+      </nav>
+      <p class="eyebrow">iPadで記録する</p>
+      <h1>Writerの使い方</h1>
+      <p class="page-summary">
+        チームを登録し、試合をリアルタイムに記録して、保存・共有するまでの基本操作です。
+        WriterはiPadの縦画面で使用します。
+      </p>
+      <nav class="anchor-nav" aria-label="ページ内ナビゲーション">
+        <a href="#prepare">準備</a>
+        <a href="#teams">チーム登録</a>
+        <a href="#setup">試合設定</a>
+        <a href="#live">ライブ記録</a>
+        <a href="#correct">修正</a>
+        <a href="#save">保存・閲覧</a>
+        <a href="#share">共有</a>
+      </nav>
+    </section>
+
+    <div class="container guide-layout">
+      <aside class="guide-toc" aria-label="目次">
+        <strong>このページの内容</strong>
+        <a href="#prepare">1. 最初の準備</a>
+        <a href="#teams">2. チーム登録</a>
+        <a href="#setup">3. 試合設定</a>
+        <a href="#live">4. ライブ記録</a>
+        <a href="#correct">5. 入力の修正</a>
+        <a href="#save">6. 保存・閲覧</a>
+        <a href="#share">7. 共有</a>
+      </aside>
+
+      <div class="guide-content">
+        <section class="guide-section" id="prepare">
+          <h2>1. 最初の準備</h2>
+          <p>
+            Writerのホームには、試合記録、スタッツ閲覧、チーム設定、設定の4つの入口があります。
+            初めて使うときは「チーム設定」から始めます。
+          </p>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-home.png">
+                <img src="assets/images/writer-home.png" alt="Writerのホーム画面" width="1668" height="2420">
+              </a>
+              <figcaption>Writerホーム。最初は「チーム設定」を選びます。</figcaption>
+            </figure>
+          </div>
+          <div class="tip">
+            <strong>デモデータで試せます</strong>
+            右上のⓘから「デモデータを開く」を選ぶと、操作確認に使えるデータを入手できます。
+          </div>
+        </section>
+
+        <section class="guide-section" id="teams">
+          <h2>2. チームと選手を登録する</h2>
+          <ol>
+            <li>ホームで「チーム設定」を選びます。</li>
+            <li>右上の追加ボタンからチームを作成します。</li>
+            <li>チーム名、カテゴリ、淡色・濃色ユニホームを設定します。</li>
+            <li>背番号と選手名を登録して保存します。</li>
+          </ol>
+          <p>
+            背番号は0〜99と00に対応しています。同じチーム内で同じ背番号は登録できません。
+            選手名は任意ですが、試合後に見分けやすい名前を付けることをおすすめします。
+          </p>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-teams.png">
+                <img src="assets/images/writer-teams.png" alt="Writerのチーム一覧画面" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>チーム一覧。タップで編集、左スワイプでゴミ箱へ移動できます。</figcaption>
+            </figure>
+          </div>
+          <div class="tip">
+            <strong>ユニホームの色を細かく調整したい場合</strong>
+            ホームの「設定」でカラー編集を詳細モードへ切り替えられます。
+          </div>
+        </section>
+
+        <section class="guide-section" id="setup">
+          <h2>3. 試合を設定する</h2>
+          <ol>
+            <li>ホームで「試合記録」を選びます。</li>
+            <li>異なる2チームを淡色側と濃色側へ割り当てます。</li>
+            <li>試合名、カテゴリ、1クオーターの時間を確認します。</li>
+            <li>「試合開始」を選びます。</li>
+          </ol>
+          <p>
+            標準時間はミニ6分、中学8分、一般10分です。試合名はチーム名から自動入力されますが、
+            必要に応じて変更できます。
+          </p>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-setup.png">
+                <img src="assets/images/writer-setup.png" alt="チームと試合時間を選ぶ試合設定画面" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>試合設定。ユニホームの見た目も開始前に確認できます。</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="guide-section" id="live">
+          <h2>4. 試合をライブ記録する</h2>
+          <p>
+            ライブ画面には、スコア、タイマー、シュートチャート、ラインナップ、Log、保存操作が
+            一画面にまとまっています。
+          </p>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-live.png">
+                <img src="assets/images/writer-live.png" alt="Writerのライブ試合記録画面" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>ライブ記録画面。上部にスコアとタイマー、中央にコート、下部に両チームの選手を表示します。</figcaption>
+            </figure>
+          </div>
+
+          <h3>最初に出場選手を選ぶ</h3>
+          <p>
+            ベンチ欄から選手を選び、交代リザーブへ追加して確定します。
+            両チームに少なくとも1人ずつ出場選手がいないと、タイマーとイベント入力は開始できません。
+          </p>
+          <div class="warning">
+            <strong>交代はタイマー停止中に行います</strong>
+            タイマーが動いている間は、出場選手の変更や交代確定はできません。
+          </div>
+
+          <h3>シュートを入力する</h3>
+          <ol>
+            <li>コート上のシュート位置をタップします。</li>
+            <li>表示された選手の背番号を、成功なら上、失敗なら下へスワイプします。</li>
+            <li>位置から2P／3Pが自動判定され、スコアとLogへ反映されます。</li>
+          </ol>
+          <p>
+            FTは左右のフリースロー位置から入力します。選手を特定できない場合は「？」を選ぶと、
+            チーム得点として記録し、後からLogで選手を割り当てられます。
+          </p>
+
+          <h3>その他のイベントを入力する</h3>
+          <p>
+            出場選手をスワイプすると、設定したイベント候補が表示されます。
+            OFR、DFR、AST、ST、BLK、TO、FOULなどから選びます。
+          </p>
+          <div class="feature-list">
+            <div class="feature-item"><strong>タイムアウト</strong><span>チームカードのメニューから入力</span></div>
+            <div class="feature-item"><strong>ベンチテクニカル</strong><span>チームイベントとして記録</span></div>
+            <div class="feature-item"><strong>選手追加</strong><span>試合中でもチームへ選手を追加</span></div>
+            <div class="feature-item"><strong>View Status</strong><span>保存前の途中スタッツを確認</span></div>
+          </div>
+        </section>
+
+        <section class="guide-section" id="correct">
+          <h2>5. 入力を修正する</h2>
+          <h3>直前の入力を戻す</h3>
+          <p>
+            誤入力に気づいた直後は「Undo」を使います。戻した入力は「Redo」でやり直せます。
+            主に追加したスタッツイベントが対象です。
+          </p>
+          <h3>過去の入力を直す</h3>
+          <p>
+            「Log」を開くと、最新の入力から順に確認できます。シュートの選手、成功・失敗、
+            イベント種類など、編集可能な項目を行内で修正できます。
+          </p>
+          <div class="tip">
+            <strong>修正後の集計</strong>
+            Logを編集・削除すると、スコアやbox scoreも原本のイベントから再計算されます。
+          </div>
+        </section>
+
+        <section class="guide-section" id="save">
+          <h2>6. 保存してスタッツを見る</h2>
+          <ol>
+            <li>必要なら「View Status」で途中集計を確認します。</li>
+            <li>試合終了後に「Save」を選びます。</li>
+            <li>確認画面で「保存して終了」を選びます。</li>
+            <li>ホームの「スタッツ閲覧」から保存済み試合を開きます。</li>
+          </ol>
+          <div class="important">
+            <strong>保存後の試合は閲覧専用です</strong>
+            <p>Saveで確定した試合をライブ記録へ戻して編集することはできません。保存前にLogとスコアをご確認ください。</p>
+          </div>
+          <div class="screenshot-grid">
+            <figure class="screenshot">
+              <a href="assets/images/writer-games.png">
+                <img src="assets/images/writer-games.png" alt="保存済み試合の一覧画面" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>試合別一覧。新しい試合から順に表示します。</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <a href="assets/images/writer-game-detail.png">
+                <img src="assets/images/writer-game-detail.png" alt="保存済み試合のスタッツ詳細画面" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>試合詳細。スコア、試合評価、チーム合計、選手別box scoreを確認できます。</figcaption>
+            </figure>
+          </div>
+          <p>
+            表示範囲は全体、各クオーター、前半、後半へ切り替えられます。
+            「選手別」では複数試合を横断した平均、試合別成績、ゾーン、試投密度などを確認できます。
+          </p>
+        </section>
+
+        <section class="guide-section" id="share">
+          <h2>7. 試合や選手を共有する</h2>
+          <p>
+            試合詳細右上の共有ボタンから、1試合を<strong>.bbstats</strong>として書き出せます。
+            選手詳細からは、1人分の試合別成績を<strong>.bbplayer</strong>として書き出せます。
+          </p>
+          <ol>
+            <li>共有したい試合または選手を開きます。</li>
+            <li>右上の共有ボタンを選びます。</li>
+            <li>書き出す形式を確認します。</li>
+            <li>Files、AirDrop、メールなど、利用する共有先を選びます。</li>
+          </ol>
+          <div class="warning">
+            <strong>共有ファイルには名前が含まれます</strong>
+            .bbstatsにはチーム名と選手名、.bbplayerには対象選手名などが含まれます。共有先を確認してから書き出してください。
+          </div>
+          <div class="button-row">
+            <a class="button" href="sharing.html">共有ファイルの違いを見る</a>
+            <a class="button secondary" href="reader.html">Readerでの読み込み方</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><p class="footer-title">Basketball Stats</p><p>Writer／Reader 公式使い方ガイド・サポート</p></div>
+        <div class="footer-links"><p class="footer-title">使い方</p><a href="writer.html">Writer</a><a href="reader.html">Reader</a><a href="sharing.html">ファイル共有</a></div>
+        <div class="footer-links"><p class="footer-title">サポート</p><a href="faq.html">よくある質問</a><a href="contact.html">お問い合わせ</a></div>
+        <div class="footer-links"><p class="footer-title">ポリシー</p><a href="privacy.html">プライバシーポリシー</a></div>
+      </div>
+      <p class="footer-note">© 2026 Basketball Stats. 掲載画面はシミュレーター上のデモデータです。</p>
+    </div>
+  </footer>
+</body>
+</html>

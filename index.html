@@ -3,44 +3,192 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Basketball Stats サポート</title>
-  <style>
-    body {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.7;
-      color: #1d1d1f;
-      background: #f5f5f7;
-    }
-
-    main {
-      padding: 32px;
-      background: white;
-      border-radius: 18px;
-    }
-
-    h1 {
-      margin-top: 0;
-    }
-  </style>
+  <meta name="description" content="Basketball Stats Writer／Readerの公式使い方ガイド。試合記録、スタッツ閲覧、共有ファイルの使い方をご案内します。">
+  <meta name="theme-color" content="#087ff5">
+  <meta property="og:title" content="Basketball Stats 使い方ガイド">
+  <meta property="og:description" content="記録から振り返り、共有まで。Writer／Readerの使い方を実画面でご案内します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bbstatsapp.github.io/basketball-stats-support/">
+  <meta property="og:image" content="https://bbstatsapp.github.io/basketball-stats-support/assets/images/writer-live.png">
+  <title>Basketball Stats｜使い方ガイド・サポート</title>
+  <link rel="icon" href="assets/images/writer-icon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>Basketball Stats サポート</h1>
-    <p>Basketball Stats Writer／Readerの使い方をご案内します。</p>
+  <a class="skip-link" href="#main">本文へ移動</a>
 
-    <h2>ガイド</h2>
-    <ul>
-      <li>Writerの使い方</li>
-      <li>Readerの使い方</li>
-      <li>ファイル共有について</li>
-      <li>よくある質問</li>
-    </ul>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Basketball Stats サポートトップ">
+        <img src="assets/images/writer-icon.png" alt="" width="38" height="38">
+        <span>Basketball Stats<small>使い方ガイド</small></span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="writer.html">Writer</a>
+        <a href="reader.html">Reader</a>
+        <a href="sharing.html">共有</a>
+        <a href="faq.html">よくある質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
 
-    <h2>お問い合わせ</h2>
-    <p>サポートページを準備しています。</p>
+  <main id="main">
+    <section class="container hero">
+      <div class="hero-copy">
+        <p class="eyebrow">公式使い方ガイド</p>
+        <h1>記録から振り返りまで、迷わず使える。</h1>
+        <p class="lead">
+          Basketball Statsは、試合を記録するWriterと、受け取ったスタッツを見るReaderからなるアプリです。
+          ここでは実際の画面に沿って、最初の一歩から共有までをご案内します。
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="writer.html">Writerの使い方</a>
+          <a class="button secondary" href="reader.html">Readerの使い方</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <figure class="device-shot">
+          <img
+            src="assets/images/writer-live.png"
+            alt="Basketball Stats Writerのライブ試合記録画面"
+            width="1668"
+            height="2420"
+          >
+        </figure>
+        <div class="hero-badge">iPadの一画面で、スコア・コート・選手をまとめて記録</div>
+      </div>
+    </section>
+
+    <section class="section surface">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Choose your guide</p>
+          <h2>使うアプリを選んでください</h2>
+          <p>記録する人はWriter、共有されたデータを見る人はReaderから始めます。</p>
+        </div>
+        <div class="cards">
+          <article class="card product-card">
+            <div>
+              <p class="section-kicker">iPad</p>
+              <h3>Basketball Stats Writer</h3>
+              <p>チーム登録、試合作成、リアルタイム記録、集計、ファイル共有を行います。</p>
+              <a class="card-link" href="writer.html">記録の始め方を見る →</a>
+            </div>
+            <img src="assets/images/writer-icon.png" alt="Writerアプリアイコン" width="112" height="112">
+          </article>
+          <article class="card product-card">
+            <div>
+              <p class="section-kicker">iPhone / iPad</p>
+              <h3>Basketball Stats Reader</h3>
+              <p>受け取った試合・選手ファイルを読み込み、スタッツやシュート傾向を確認します。</p>
+              <a class="card-link" href="reader.html">ファイルの見方を確認する →</a>
+            </div>
+            <img src="assets/images/reader-icon.png" alt="Readerアプリアイコン" width="112" height="112">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Basic flow</p>
+          <h2>基本は4つの流れです</h2>
+          <p>最初にチームを用意すれば、あとは試合ごとに記録・保存・共有できます。</p>
+        </div>
+        <div class="flow-grid">
+          <article class="flow-step">
+            <span class="step-number">1</span>
+            <h3>チームを登録</h3>
+            <p>チーム名、ユニホーム、背番号と選手名をWriterへ登録します。</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-number">2</span>
+            <h3>試合を記録</h3>
+            <p>タイマーとラインナップを確認し、シュートや各イベントを入力します。</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-number">3</span>
+            <h3>保存して確認</h3>
+            <p>最終スコア、box score、シュートチャート、選手別成績を振り返ります。</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-number">4</span>
+            <h3>Readerへ共有</h3>
+            <p>.bbstatsまたは.bbplayerを書き出し、FilesやAirDropなどで渡します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container media-panel">
+        <div class="section-header">
+          <p class="section-kicker">30-second tour</p>
+          <h2>実際の操作を見る</h2>
+          <p>
+            Writerのホームから、チーム確認、試合設定、ライブ記録、保存済みスタッツへ進む様子です。
+            動画にはシミュレーター上のデモデータだけを使用しています。
+          </p>
+          <a class="button" href="writer.html">画面ごとの説明へ</a>
+        </div>
+        <figure class="video-frame">
+          <video
+            controls
+            muted
+            playsinline
+            preload="metadata"
+            poster="assets/images/writer-home.png"
+            aria-label="Writerの基本操作を紹介する約30秒の動画"
+          >
+            <source src="assets/media/writer-walkthrough.mp4" type="video/mp4">
+            お使いのブラウザは動画再生に対応していません。
+          </video>
+          <figcaption class="video-caption">約30秒・音声なし</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container privacy-banner">
+        <div>
+          <h2>データはローカルファースト</h2>
+          <p>
+            アカウント登録やクラウド同期はありません。データが端末外へ出るのは、
+            ユーザーが共有ファイルを書き出したときだけです。
+          </p>
+        </div>
+        <a class="button" href="privacy.html">プライバシーを確認</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-title">Basketball Stats</p>
+          <p>Writer／Reader 公式使い方ガイド・サポート</p>
+        </div>
+        <div class="footer-links">
+          <p class="footer-title">使い方</p>
+          <a href="writer.html">Writer</a>
+          <a href="reader.html">Reader</a>
+          <a href="sharing.html">ファイル共有</a>
+        </div>
+        <div class="footer-links">
+          <p class="footer-title">サポート</p>
+          <a href="faq.html">よくある質問</a>
+          <a href="contact.html">お問い合わせ</a>
+        </div>
+        <div class="footer-links">
+          <p class="footer-title">ポリシー</p>
+          <a href="privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+      <p class="footer-note">© 2026 Basketball Stats. 掲載画面は開発中のシミュレーター表示であり、リリース版と細部が異なる場合があります。</p>
+    </div>
+  </footer>
 </body>
 </html>

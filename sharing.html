@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Basketball Statsの共有ファイル.bbstatsと.bbplayerの違い、書き出し・読み込み方法、共有時の注意点を説明します。">
+  <meta name="theme-color" content="#087ff5">
+  <title>ファイル共有｜Basketball Stats</title>
+  <link rel="icon" href="assets/images/writer-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/writer-icon.png" alt="" width="38" height="38">
+        <span>Basketball Stats<small>使い方ガイド</small></span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="writer.html">Writer</a>
+        <a href="reader.html">Reader</a>
+        <a href="sharing.html" aria-current="page">共有</a>
+        <a href="faq.html">よくある質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container page-hero">
+      <nav class="breadcrumbs" aria-label="パンくずリスト">
+        <a href="index.html">サポート</a><span aria-hidden="true">/</span><span>ファイル共有</span>
+      </nav>
+      <p class="eyebrow">Files / AirDrop / メール</p>
+      <h1>ファイル共有</h1>
+      <p class="page-summary">
+        試合全体を渡す.bbstatsと、選手1人分を渡す.bbplayerがあります。
+        どちらもBasketball Stats専用の暗号化・検証済みファイルです。
+      </p>
+    </section>
+
+    <div class="container prose section compact">
+      <h2>.bbstatsと.bbplayerの違い</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>.bbstats</th>
+              <th>.bbplayer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>共有するもの</strong></td>
+              <td>finishedの1試合全体</td>
+              <td>1選手の複数試合成績</td>
+            </tr>
+            <tr>
+              <td><strong>主な内容</strong></td>
+              <td>2チーム、選手、出場履歴、イベント、box score、シュート位置</td>
+              <td>対象選手の試合別box scoreとフィールドゴール位置</td>
+            </tr>
+            <tr>
+              <td><strong>含まれないもの</strong></td>
+              <td>端末パス、Apple Account、端末識別子</td>
+              <td>他選手、交代履歴、チーム全イベント、チームbox score</td>
+            </tr>
+            <tr>
+              <td><strong>主な用途</strong></td>
+              <td>試合を丸ごとReaderで見る</td>
+              <td>特定選手の成績を継続して共有する</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Writerから書き出す</h2>
+      <h3>試合全体を共有する</h3>
+      <ol>
+        <li>Writerの「スタッツ閲覧」で試合を開きます。</li>
+        <li>右上の共有ボタンを選びます。</li>
+        <li>「.bbstatsを書き出す」を選びます。</li>
+        <li>Files、AirDrop、メールなどの共有先を選びます。</li>
+      </ol>
+
+      <h3>選手を共有する</h3>
+      <ol>
+        <li>Writerの「スタッツ閲覧」を「選手別」へ切り替えます。</li>
+        <li>対象選手を開きます。</li>
+        <li>右上の共有ボタンから「.bbplayerを書き出す」を選びます。</li>
+        <li>複数選手の場合は選手別画面の共有ボタンからまとめて選びます。</li>
+      </ol>
+
+      <h2>Readerへ読み込む</h2>
+      <p>
+        Reader右上の読み込みボタン、または空画面の「ファイルを選択」からファイルを選びます。
+        Filesなどで受け取ったファイルを直接Readerで開くこともできます。
+      </p>
+      <p>
+        Readerはファイルサイズ、暗号認証、形式、内容の整合性、checksumなどを確認します。
+        一部のファイルが不正でも、同時に選んだ正常なファイルは読み込まれます。
+      </p>
+
+      <div class="important">
+        <strong>共有前に相手を確認してください</strong>
+        <p>
+          .bbstatsにはチーム名と選手名、.bbplayerには対象選手名などが含まれます。
+          個人を特定できる情報として扱い、必要な相手だけへ共有してください。
+        </p>
+      </div>
+
+      <h2>同じデータを読み込んだとき</h2>
+      <ul>
+        <li>同じID・同じ内容は重複保存されません。</li>
+        <li>同じIDで内容が異なる場合は、置き換えるか確認します。</li>
+        <li>同じ試合・同じ選手の成績は一度だけ集計されます。</li>
+        <li>ゴミ箱にあるデータは、再読み込みだけでは自動復元されません。</li>
+      </ul>
+
+      <h2>読み込めない場合</h2>
+      <ul>
+        <li>ファイル名の末尾が.bbstatsまたは.bbplayerか確認します。</li>
+        <li>拡張子だけを変更したファイルは使用できません。</li>
+        <li>古い開発用形式、壊れたファイル、未対応の新形式は安全のため拒否されます。</li>
+        <li>送信元でWriter／Readerからもう一度書き出してもらいます。</li>
+      </ul>
+
+      <div class="button-row">
+        <a class="button" href="writer.html#share">Writerで書き出す</a>
+        <a class="button secondary" href="reader.html#import">Readerへ読み込む</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><p class="footer-title">Basketball Stats</p><p>Writer／Reader 公式使い方ガイド・サポート</p></div>
+        <div class="footer-links"><p class="footer-title">使い方</p><a href="writer.html">Writer</a><a href="reader.html">Reader</a><a href="sharing.html">ファイル共有</a></div>
+        <div class="footer-links"><p class="footer-title">サポート</p><a href="faq.html">よくある質問</a><a href="contact.html">お問い合わせ</a></div>
+        <div class="footer-links"><p class="footer-title">ポリシー</p><a href="privacy.html">プライバシーポリシー</a></div>
+      </div>
+      <p class="footer-note">© 2026 Basketball Stats.</p>
+    </div>
+  </footer>
+</body>
+</html>

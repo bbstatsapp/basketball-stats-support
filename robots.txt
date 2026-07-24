@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bbstatsapp.github.io/basketball-stats-support/sitemap.xml

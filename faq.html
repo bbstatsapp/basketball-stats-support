@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Basketball Stats Writer／Readerのよくある質問。タイマー、保存、共有、重複、削除、選手統合などをご案内します。">
+  <meta name="theme-color" content="#087ff5">
+  <title>よくある質問｜Basketball Stats</title>
+  <link rel="icon" href="assets/images/writer-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/writer-icon.png" alt="" width="38" height="38">
+        <span>Basketball Stats<small>使い方ガイド</small></span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="writer.html">Writer</a>
+        <a href="reader.html">Reader</a>
+        <a href="sharing.html">共有</a>
+        <a href="faq.html" aria-current="page">よくある質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container page-hero">
+      <nav class="breadcrumbs" aria-label="パンくずリスト">
+        <a href="index.html">サポート</a><span aria-hidden="true">/</span><span>よくある質問</span>
+      </nav>
+      <p class="eyebrow">FAQ</p>
+      <h1>よくある質問</h1>
+      <p class="page-summary">操作に迷ったときや、思ったように動かないときはこちらをご確認ください。</p>
+    </section>
+
+    <section class="container section compact">
+      <div class="section-header">
+        <p class="section-kicker">Writer</p>
+        <h2>記録について</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>タイマーを開始できません</summary>
+          <div class="details-body">
+            <p>両チームに少なくとも1人ずつ出場選手が必要です。タイマーを止め、ベンチから選手を選んで交代を確定してください。</p>
+          </div>
+        </details>
+        <details>
+          <summary>選手を交代できません</summary>
+          <div class="details-body">
+            <p>交代・ラインナップ変更はタイマー停止中だけ行えます。タイマーを停止してから、交代リザーブを選んで確定してください。</p>
+          </div>
+        </details>
+        <details>
+          <summary>シュートした選手が分かりません</summary>
+          <div class="details-body">
+            <p>シュート位置を選んだ後、「？」の選手を使って不明選手として記録できます。チーム得点には含まれ、後からLogで登録選手へ修正できます。</p>
+          </div>
+        </details>
+        <details>
+          <summary>入力を間違えました</summary>
+          <div class="details-body">
+            <p>直前のスタッツ入力ならUndoを使います。過去の入力はLogを開いて修正または削除します。Log修正後は集計も再計算されます。</p>
+          </div>
+        </details>
+        <details>
+          <summary>保存した試合をもう一度編集できますか？</summary>
+          <div class="details-body">
+            <p>できません。Saveで確定した試合は読み取り専用です。保存前にView StatusとLogで内容をご確認ください。</p>
+          </div>
+        </details>
+        <details>
+          <summary>記録画面から戻るとどうなりますか？</summary>
+          <div class="details-body">
+            <p>警告を確認して戻ると、その試合の途中記録は破棄されます。試合中にチームへ追加した選手は、チーム登録として残ります。</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section surface">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Reader & sharing</p>
+          <h2>閲覧・共有について</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>.bbstatsと.bbplayerは何が違いますか？</summary>
+            <div class="details-body">
+              <p>.bbstatsは1試合全体、.bbplayerは1選手の複数試合成績を共有します。詳しくは「ファイル共有」をご覧ください。</p>
+            </div>
+          </details>
+          <details>
+            <summary>同じファイルを何度も読み込むと重複しますか？</summary>
+            <div class="details-body">
+              <p>同じID・同じ内容は重複保存されません。同じIDで内容が違う場合は、置き換えるか確認します。</p>
+            </div>
+          </details>
+          <details>
+            <summary>Readerで試合を修正できますか？</summary>
+            <div class="details-body">
+              <p>できません。Readerは共有されたスタッツを安全に閲覧・再共有するための読み取り専用アプリです。</p>
+            </div>
+          </details>
+          <details>
+            <summary>.bbplayerの試合をタップしても試合詳細へ進みません</summary>
+            <div class="details-body">
+              <p>.bbplayerだけに存在する試合は、対象選手の成績だけを含みます。完全な試合詳細を見るには、対応する.bbstatsを読み込んでください。</p>
+            </div>
+          </details>
+          <details>
+            <summary>名前と背番号が同じ選手は自動でまとまりますか？</summary>
+            <div class="details-body">
+              <p>自動では統合しません。別の選手を誤ってまとめないため、選手IDを基準にしています。必要な場合は選手統合画面で手動統合できます。</p>
+            </div>
+          </details>
+          <details>
+            <summary>読み込んだファイルを別の人へ渡せますか？</summary>
+            <div class="details-body">
+              <p>Reader右上の共有ボタンから、選択した試合または選手データを再共有できます。内容は編集されません。</p>
+            </div>
+          </details>
+          <details>
+            <summary>削除したデータを戻せますか？</summary>
+            <div class="details-body">
+              <p>ゴミ箱を空にする前なら復元できます。完全削除後はアプリから戻せないため、必要なら元の共有ファイルを保管してください。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-header">
+        <p class="section-kicker">Data & privacy</p>
+        <h2>データについて</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>アカウント登録は必要ですか？</summary>
+          <div class="details-body">
+            <p>必要ありません。Google／Appleログイン、クラウド同期、サーバー保存は使用しません。</p>
+          </div>
+        </details>
+        <details>
+          <summary>オフラインでも使えますか？</summary>
+          <div class="details-body">
+            <p>記録・閲覧はオフラインで利用できます。外部ページを開くときや、AirDrop以外のオンライン共有方法を使うときは通信が必要な場合があります。</p>
+          </div>
+        </details>
+        <details>
+          <summary>データはどこに保存されますか？</summary>
+          <div class="details-body">
+            <p>Writerの記録はWriterの端末内、Readerへ読み込んだファイルはReaderの端末内に保存されます。ユーザーが明示的に書き出した場合だけ共有先へ渡ります。</p>
+          </div>
+        </details>
+        <details>
+          <summary>アプリを削除するとデータはどうなりますか？</summary>
+          <div class="details-body">
+            <p>端末からアプリを削除すると、そのアプリ内に保存されたデータも失われる可能性があります。必要な試合・選手データは事前に共有ファイルとして書き出してください。</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <h2>解決しませんでしたか？</h2>
+          <p>アプリ名、バージョン、iOS／iPadOSのバージョン、操作手順を添えてお問い合わせください。</p>
+        </div>
+        <a class="button" href="contact.html">お問い合わせ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><p class="footer-title">Basketball Stats</p><p>Writer／Reader 公式使い方ガイド・サポート</p></div>
+        <div class="footer-links"><p class="footer-title">使い方</p><a href="writer.html">Writer</a><a href="reader.html">Reader</a><a href="sharing.html">ファイル共有</a></div>
+        <div class="footer-links"><p class="footer-title">サポート</p><a href="faq.html">よくある質問</a><a href="contact.html">お問い合わせ</a></div>
+        <div class="footer-links"><p class="footer-title">ポリシー</p><a href="privacy.html">プライバシーポリシー</a></div>
+      </div>
+      <p class="footer-note">© 2026 Basketball Stats.</p>
+    </div>
+  </footer>
+</body>
+</html>
