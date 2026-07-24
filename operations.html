@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Basketball Stats Writerの詳しい操作方法。タイマー編集、シュート・イベント入力、イベント配置変更、交代、Log修正を実画面で説明します。">
+  <meta name="theme-color" content="#087ff5">
+  <title>詳しい操作方法｜Basketball Stats</title>
+  <link rel="icon" href="assets/images/writer-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/writer-icon.png" alt="" width="38" height="38">
+        <span>Basketball Stats<small>使い方ガイド</small></span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="writer.html">Writer</a>
+        <a href="operations.html" aria-current="page">操作方法</a>
+        <a href="reader.html">Reader</a>
+        <a href="sharing.html">共有</a>
+        <a href="faq.html">よくある質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container page-hero">
+      <nav class="breadcrumbs" aria-label="パンくずリスト">
+        <a href="index.html">サポート</a><span aria-hidden="true">/</span><span>操作方法</span>
+      </nav>
+      <p class="eyebrow">試合中に迷ったとき</p>
+      <h1>Writerの<br class="mobile-only">詳しい操作方法</h1>
+      <p class="page-summary">
+        タップ、長押し、スワイプ、ドラッグを使う操作を、実際の画面と一緒に説明します。
+        初めての試合前に、タイマーとイベント入力だけでも確認しておくと安心です。
+      </p>
+      <nav class="anchor-nav" aria-label="ページ内ナビゲーション">
+        <a href="#gestures">基本ジェスチャー</a>
+        <a href="#timer">タイマー</a>
+        <a href="#shots">シュート</a>
+        <a href="#events">選手イベント</a>
+        <a href="#event-layout">イベント配置</a>
+        <a href="#lineup">交代</a>
+        <a href="#correct">修正・確認</a>
+        <a href="#trouble">困ったとき</a>
+      </nav>
+    </section>
+
+    <div class="container guide-layout">
+      <aside class="guide-toc" aria-label="目次">
+        <strong>このページの内容</strong>
+        <a href="#gestures">1. 基本ジェスチャー</a>
+        <a href="#timer">2. タイマー</a>
+        <a href="#shots">3. シュート入力</a>
+        <a href="#events">4. 選手イベント</a>
+        <a href="#event-layout">5. イベント配置</a>
+        <a href="#lineup">6. ラインナップ・交代</a>
+        <a href="#correct">7. 修正・確認</a>
+        <a href="#trouble">8. 困ったとき</a>
+      </aside>
+
+      <div class="guide-content">
+        <section class="guide-section" id="gestures">
+          <h2>1. 基本ジェスチャー</h2>
+          <p>Writerでは、同じ場所でもジェスチャーによって動作が変わります。</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>操作</th><th>主な用途</th><th>ポイント</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>タップ</td><td>タイマー開始・停止、モード選択、選手選択</td><td>ボタンまたはカードを短く1回押します。</td></tr>
+                <tr><td>長押し</td><td>タイマーの時刻・クオーター編集</td><td>タイマー停止中に約0.4秒押し続けます。</td></tr>
+                <tr><td>スワイプ</td><td>成功・失敗、ASTなどのイベント入力</td><td>目的の表示が選択色になってから指を離します。</td></tr>
+                <tr><td>ドラッグ＆ドロップ</td><td>イベント配置の入れ替え</td><td>設定画面の円内で、項目を別の項目へ重ねます。</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="important">
+            <strong>「上スワイプ＝AST」ではありません</strong>
+            <p>ASTなどの選手イベントの方向は設定で変更できます。試合中に表示される円形メニューを見て、対象イベントの方向へスワイプしてください。</p>
+          </div>
+        </section>
+
+        <section class="guide-section" id="timer">
+          <h2>2. タイマーを使う・時間を直す</h2>
+          <h3>開始・停止</h3>
+          <ol>
+            <li>両チームに少なくとも1人ずつ出場選手を設定します。</li>
+            <li>中央のタイマーをタップすると開始します。</li>
+            <li>もう一度タップすると停止します。</li>
+          </ol>
+          <p>タイマーを開始すると、ラインナップ欄はイベント入力モードへ切り替わります。</p>
+
+          <h3>時刻・クオーターを編集</h3>
+          <ol>
+            <li>タイマーが動いている場合は、タップして停止します。</li>
+            <li>赤いタイマー表示を約0.4秒長押しします。</li>
+            <li>左から「クオーター」「分」「秒」の数字を上下にスワイプして合わせます。</li>
+            <li>タイマー表示をタップして編集を確定します。</li>
+          </ol>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-timer-edit.png">
+                <img src="assets/images/writer-timer-edit.png" alt="クオーター、分、秒を縦方向のダイヤルで編集しているタイマー画面" width="1668" height="2420">
+              </a>
+              <figcaption>停止中のタイマーを長押しすると、クオーター・分・秒の編集ダイヤルが表示されます。</figcaption>
+            </figure>
+          </div>
+          <div class="tip">
+            <strong>編集できる範囲</strong>
+            時刻は00:00〜59:59、クオーターは1Q〜4Qと延長を選べます。タイマー稼働中は編集できません。
+          </div>
+        </section>
+
+        <section class="guide-section" id="shots">
+          <h2>3. シュートを記録する</h2>
+          <h3>2P・3P</h3>
+          <ol>
+            <li>タイマーを開始し、コート上のシュート位置をタップします。</li>
+            <li>表示された背番号からシュートした選手を探します。「?」は選手不明です。</li>
+            <li>成功は背番号を上、失敗は下へスワイプして離します。</li>
+          </ol>
+          <p>2P／3Pはタップしたコート位置から自動判定され、成功時はスコアにも反映されます。</p>
+
+          <h3>フリースロー</h3>
+          <ol>
+            <li>左右どちらかのフリースローライン中央をタップします。</li>
+            <li>対象選手を選び、成功は上、失敗は下へスワイプします。</li>
+          </ol>
+          <div class="tip">
+            <strong>シュート入力だけは上下が固定です</strong>
+            シュートの上＝成功、下＝失敗は固定です。次に説明するAST、ST、BLKなどの方向は設定によって変わります。
+          </div>
+        </section>
+
+        <section class="guide-section" id="events">
+          <h2>4. ASTなどの選手イベントを記録する</h2>
+          <ol>
+            <li>ラインナップ右上で「イベント」が選択されていることを確認します。</li>
+            <li>出場選手のカードを任意の方向へ少しスワイプすると、円形のイベント候補が表示されます。</li>
+            <li>記録したいイベントの方向へ指を動かします。</li>
+            <li>対象イベントが青く選択された状態で指を離します。</li>
+          </ol>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-event-swipe.png">
+                <img src="assets/images/writer-event-swipe.png" alt="選手カードの周囲にイベント候補が表示され、ASTが選択されたライブ記録画面" width="720" height="1044">
+              </a>
+              <figcaption>この設定ではASTが上にありますが、配置を変えれば方向も変わります。表示された項目の方向へ動かしてください。</figcaption>
+            </figure>
+          </div>
+          <div class="feature-list">
+            <div class="feature-item"><strong>AST</strong><span>アシスト</span></div>
+            <div class="feature-item"><strong>ST</strong><span>スティール</span></div>
+            <div class="feature-item"><strong>BLK</strong><span>ブロック</span></div>
+            <div class="feature-item"><strong>FOUL</strong><span>個人ファウル</span></div>
+            <div class="feature-item"><strong>TO</strong><span>ターンオーバー</span></div>
+            <div class="feature-item"><strong>DFR</strong><span>ディフェンスリバウンド</span></div>
+            <div class="feature-item"><strong>OFR</strong><span>オフェンスリバウンド</span></div>
+          </div>
+          <div class="warning">
+            <strong>短すぎるスワイプは記録されません</strong>
+            円形メニューを表示し、目的の項目が選択色になったことを確認してから指を離してください。
+          </div>
+        </section>
+
+        <section class="guide-section" id="event-layout">
+          <h2>5. イベントの種類・配置を変更する</h2>
+          <ol>
+            <li>ホームから「設定」を開きます。</li>
+            <li>「イベント記録UI」を選びます。</li>
+            <li>画面下のAST、STなどをタップして、試合中に表示する項目を選びます。</li>
+            <li>円内のイベント名を長めに押して持ち上げ、入れ替えたい項目へドラッグ＆ドロップします。</li>
+          </ol>
+          <p>円の一番上から時計回りに、試合中のスワイプ方向へ対応します。変更はその場で保存され、次のイベント入力から反映されます。</p>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-event-settings.png">
+                <img src="assets/images/writer-event-settings.png" alt="7つのイベントを円形に配置し、表示項目を選択するイベント記録UI設定画面" width="1668" height="2420">
+              </a>
+              <figcaption>チェック付きの項目が試合中に表示されます。円内の項目をドラッグ＆ドロップすると配置を交換できます。</figcaption>
+            </figure>
+          </div>
+          <div class="tip">
+            <strong>よく使うイベントを近い方向へ</strong>
+            よく使うASTやリバウンドを指が動かしやすい位置へ置き、使用しない項目を外すと入力しやすくなります。最低1項目は残ります。
+          </div>
+        </section>
+
+        <section class="guide-section" id="lineup">
+          <h2>6. ラインナップと交代</h2>
+          <ol>
+            <li>タイマーを停止します。</li>
+            <li>ラインナップ右上で「交代」を選びます。</li>
+            <li>ベンチから入れる選手を選ぶと「IN」、出場欄から下げる選手を選ぶと「OUT」に追加されます。</li>
+            <li>INとOUTの人数を確認し、チェックマークで一括確定します。</li>
+          </ol>
+          <p>試合開始時は、各チームのベンチから出場する5人を選び、チームごとにチェックマークで確定します。タイマー稼働中は交代できません。</p>
+          <div class="tip">
+            <strong>選手を試合中に追加する</strong>
+            交代モードでベンチ欄の追加ボタンを選ぶと、その試合とチームへ選手を追加できます。
+          </div>
+        </section>
+
+        <section class="guide-section" id="correct">
+          <h2>7. 入力を修正・確認する</h2>
+          <div class="feature-list">
+            <div class="feature-item"><strong>Undo</strong><span>直前に追加したイベントを取り消します。</span></div>
+            <div class="feature-item"><strong>Redo</strong><span>Undoしたイベントをやり直します。</span></div>
+            <div class="feature-item"><strong>Log</strong><span>イベントを最新順に確認し、選手・種類・成功失敗などを修正します。</span></div>
+            <div class="feature-item"><strong>View Status</strong><span>保存前のスコア、チーム合計、選手別box scoreを確認します。</span></div>
+          </div>
+          <p>Logでは削除できるイベントを削除できます。ただし、タイマー調整と交代記録は履歴整合性のため通常イベントと同じ削除対象にはなりません。</p>
+          <div class="warning">
+            <strong>Save後はライブ編集へ戻せません</strong>
+            Saveで試合を確定する前に、スコア、Log、View Statusを確認してください。
+          </div>
+        </section>
+
+        <section class="guide-section" id="trouble">
+          <h2>8. 操作できないとき</h2>
+          <div class="faq-list">
+            <details>
+              <summary>タイマーを開始できません</summary>
+              <div class="details-body"><p>両チームに少なくとも1人ずつ出場選手が必要です。ラインナップを確定してからタイマーをタップしてください。</p></div>
+            </details>
+            <details>
+              <summary>タイマー編集画面が出ません</summary>
+              <div class="details-body"><p>タイマーを停止してから、赤いタイマー表示を約0.4秒長押ししてください。通常のタップでは開始・停止になります。</p></div>
+            </details>
+            <details>
+              <summary>選手をスワイプしてもイベントが入りません</summary>
+              <div class="details-body"><p>タイマーが動いていること、ラインナップ欄が「イベント」モードであること、選手が出場欄にいることを確認します。項目が青くなる距離までスワイプしてから離してください。</p></div>
+            </details>
+            <details>
+              <summary>交代操作ができません</summary>
+              <div class="details-body"><p>タイマーを停止し、ラインナップ右上の「交代」を選びます。INとOUTを選び、出場欄が0〜5人になる組み合わせでチェックマークを押してください。</p></div>
+            </details>
+            <details>
+              <summary>入力結果が合っているか不安です</summary>
+              <div class="details-body"><p>Logでイベントを確認し、View Statusでスコアとbox scoreへの反映を確認します。確定前ならUndoまたはLogから修正できます。</p></div>
+            </details>
+          </div>
+          <div class="button-row">
+            <a class="button" href="writer.html">Writer全体の流れへ</a>
+            <a class="button secondary" href="faq.html">よくある質問を見る</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><p class="footer-title">Basketball Stats</p><p>Writer／Reader 公式使い方ガイド・サポート</p></div>
+        <div class="footer-links"><p class="footer-title">使い方</p><a href="writer.html">Writer</a><a href="operations.html">詳しい操作方法</a><a href="reader.html">Reader</a><a href="sharing.html">ファイル共有</a></div>
+        <div class="footer-links"><p class="footer-title">サポート</p><a href="faq.html">よくある質問</a><a href="contact.html">お問い合わせ</a></div>
+        <div class="footer-links"><p class="footer-title">ポリシー</p><a href="privacy.html">プライバシーポリシー</a></div>
+      </div>
+      <p class="footer-note">© 2026 Basketball Stats. 掲載画面はシミュレーター上のデモデータです。</p>
+    </div>
+  </footer>
+</body>
+</html>
