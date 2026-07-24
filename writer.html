@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Basketball Stats Writerの使い方。チーム登録、試合設定、ライブ記録、保存、スタッツ閲覧、共有までを実画面で説明します。">
+  <meta name="description" content="Basketball Stats Writerの使い方。チーム登録、試合記録、FT入力、試合評価、シュート傾向、選手別分析、共有までを実画面で説明します。">
   <meta name="theme-color" content="#087ff5">
   <title>Writerの使い方｜Basketball Stats</title>
   <link rel="icon" href="assets/images/writer-icon.png">
@@ -209,7 +209,8 @@
             <li>位置から2P／3Pが自動判定され、スコアとLogへ反映されます。</li>
           </ol>
           <p>
-            FTは左右のフリースロー位置から入力します。選手を特定できない場合は「？」を選ぶと、
+            FTは左右どちらかのフリースローサークルを約0.4秒長押しして入力します。
+            選手を特定できない場合は「？」を選ぶと、
             チーム得点として記録し、後からLogで選手を割り当てられます。
           </p>
 
@@ -283,13 +284,23 @@
               <a href="assets/images/writer-game-detail.png">
                 <img src="assets/images/writer-game-detail.png" alt="保存済み試合のスタッツ詳細画面" width="1668" height="2420" loading="lazy">
               </a>
-              <figcaption>試合詳細。スコア、試合評価、チーム合計、選手別box scoreを確認できます。</figcaption>
+              <figcaption>試合詳細。試合評価、チーム合計、選手別box score、シュート傾向を同じ記録から確認できます。</figcaption>
             </figure>
           </div>
+          <h3>試合評価とシュート傾向</h3>
           <p>
             表示範囲は全体、各クオーター、前半、後半へ切り替えられます。
-            「選手別」では複数試合を横断した平均、試合別成績、ゾーン、試投密度などを確認できます。
+            「試合評価」では、推定POSS・推定PPP・Off Eff・eFG%など7つの試合評価指数をチーム単位で比較できます。
+            シュートチャートでは成功・失敗の位置、ゾーン別成功率、試投密度・成功密度を確認できます。
           </p>
+          <p>
+            「選手別」では複数試合を横断した平均、試合別成績、3つのエリアごとのシュート期待値、
+            ゾーン・密度を確認できます。別端末や背番号変更などで同じ選手が別々に表示された場合は、
+            原本を変えずにデータ統合できます。
+          </p>
+          <div class="button-row">
+            <a class="button secondary" href="reader.html#analysis">スタッツの詳しい見方</a>
+          </div>
         </section>
 
         <section class="guide-section" id="share">

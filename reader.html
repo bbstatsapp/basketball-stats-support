@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Basketball Stats Readerの使い方。受け取った.bbstats／.bbplayerの読み込み、閲覧、再共有、削除と復元を説明します。">
+  <meta name="description" content="Basketball Stats Readerの使い方。試合評価、シュートチャート・密度、選手別期待値、データ統合、共有と復元を説明します。">
   <meta name="theme-color" content="#087ff5">
   <title>Readerの使い方｜Basketball Stats</title>
   <link rel="icon" href="assets/images/reader-icon.png">
@@ -43,6 +43,7 @@
         <a href="#receive">受け取る</a>
         <a href="#import">読み込む</a>
         <a href="#games">試合を見る</a>
+        <a href="#analysis">分析する</a>
         <a href="#players">選手を見る</a>
         <a href="#share">再共有</a>
         <a href="#trash">削除・復元</a>
@@ -55,9 +56,10 @@
         <a href="#receive">1. ファイルを受け取る</a>
         <a href="#import">2. Readerへ読み込む</a>
         <a href="#games">3. 試合を見る</a>
-        <a href="#players">4. 選手を見る</a>
-        <a href="#share">5. 再共有する</a>
-        <a href="#trash">6. 削除・復元</a>
+        <a href="#analysis">4. 分析の見方</a>
+        <a href="#players">5. 選手を見る・統合する</a>
+        <a href="#share">6. 再共有する</a>
+        <a href="#trash">7. 削除・復元</a>
       </aside>
 
       <div class="guide-content">
@@ -132,25 +134,108 @@
           </p>
         </section>
 
+        <section class="guide-section" id="analysis">
+          <h2>4. 試合評価・シュート傾向を読む</h2>
+          <h3>試合評価</h3>
+          <p>
+            「試合評価」は、チーム単位の攻撃内容を7つの試合評価指数で比較する表です。
+            記録済みのスタッツから自動計算されるため、追加の入力は必要ありません。
+            WriterのView Statusと保存済み試合、Readerの試合詳細で同じ値を確認できます。
+          </p>
+          <div class="feature-list">
+            <div class="feature-item"><strong>推定POSS／推定PPP</strong><span>攻撃回数の概算と、1ポゼッション当たりの得点です。</span></div>
+            <div class="feature-item"><strong>Off Eff</strong><span>100回攻撃当たりの得点として見た攻撃効率です。</span></div>
+            <div class="feature-item"><strong>eFG%／FT Set</strong><span>3Pの価値を反映したシュート効率と、FGAに対するFT獲得割合です。</span></div>
+            <div class="feature-item"><strong>TOV%／OREB%</strong><span>攻撃をターンオーバーで終えた割合と、獲得可能なオフェンスリバウンドを取った割合です。</span></div>
+          </div>
+          <div class="tip">
+            <strong>ⓘから計算方法を確認できます</strong>
+            試合評価の横にある情報ボタンを開くと、各指標の正式名と計算式を確認できます。
+            表示範囲を切り替えると、その期間の記録だけで再計算されます。試合序盤の値は少ない記録から求める暫定値です。
+          </div>
+
+          <h3>シュートチャート・ゾーン・密度</h3>
+          <p>
+            シュートチャートは成功を緑の丸、失敗を赤い×で表示し、どこから打って結果がどうだったかを確認できます。
+            FTは投球位置が固定されているため、フィールドゴールのチャート、ゾーン、密度には含めません。
+          </p>
+          <div class="feature-list">
+            <div class="feature-item"><strong>ゾーン別</strong><span>コートをエリアに分け、各エリアの成功率と成功数／試投数を表示します。</span></div>
+            <div class="feature-item"><strong>試投密度</strong><span>シュートを多く打った場所ほど強く表示され、よく選ぶ位置が分かります。</span></div>
+            <div class="feature-item"><strong>成功密度</strong><span>成功したシュートが集中している場所を表示し、得点が生まれた位置を確認できます。</span></div>
+          </div>
+          <div class="important">
+            <strong>密度は成功率ではありません</strong>
+            <p>
+              試投密度と成功密度は本数の集中度です。効率を比べるときは「ゾーン別」の成功率、
+              打つ傾向を見るときは「試投密度」、得点位置を見るときは「成功密度」を使います。
+            </p>
+          </div>
+        </section>
+
         <section class="guide-section" id="players">
-          <h2>4. 選手スタッツを見る</h2>
+          <h2>5. 選手スタッツ・期待値・データ統合</h2>
           <ol>
             <li>画面上部で「選手別」を選びます。</li>
             <li>選手名で検索したり、チームで絞り込んだりします。</li>
-            <li>選手をタップし、平均、試合別成績、ゾーン、密度を確認します。</li>
+            <li>選手をタップし、平均、試合別成績、シュート期待値、ゾーン、密度を確認します。</li>
           </ol>
           <p>
             読み込んだ複数試合と.bbplayerを横断して集計します。同じ試合・同じ選手のデータは
             一度だけ数えるため、あとから完全な試合ファイルを読み込んでも二重計上しません。
           </p>
+
+          <h3>選手ごとのシュート期待値</h3>
+          <p>
+            「シュート期待値」は、記録済みの成功数と試投数から求める1試投当たりの実績得点です。
+            ペイント内2P、ペイント外2P、3Pに分けて、「点／試投」「成功／試投」「FG%」を表示します。
+          </p>
+          <div class="feature-list">
+            <div class="feature-item"><strong>ペイント内2P</strong><span>ペイント内で得た点数を、そのエリアの試投数で割ります。</span></div>
+            <div class="feature-item"><strong>ペイント外2P</strong><span>ペイント外の2Pで得た点数を、そのエリアの試投数で割ります。</span></div>
+            <div class="feature-item"><strong>3P</strong><span>3Pで得た点数を3P試投数で割り、3点の価値を反映します。</span></div>
+          </div>
           <div class="tip">
-            <strong>別のIDを持つ同一選手</strong>
-            名前や背番号が同じでも自動統合しません。必要な場合は選手統合画面で明示的にまとめられ、後から分離もできます。
+            <strong>将来を予測するAIの数値ではありません</strong>
+            現在までに記録された結果をエリア別に比較する値です。試投数が少ないと大きく変動するため、
+            「成功／試投」と一緒に確認してください。FTはこの期待値に含めません。
+          </div>
+
+          <h3>選手データを統合する</h3>
+          <p>
+            同じ人物でも、別の端末やチームで新しく登録すると別の選手IDになります。
+            名前や背番号だけでは別人と区別できないため、アプリは自動統合せず、ユーザーが同一人物だと確認した場合だけまとめます。
+          </p>
+          <div class="important">
+            <strong>使用例</strong>
+            <p>
+              端末Aでは「田中 #7」、端末Bでは「TANAKA #12」と登録されているが、実際は同じ選手だった場合です。
+              背番号変更、表記の違い、移籍・カテゴリ変更、別端末から受け取ったデータで成績が分かれたときに使います。
+            </p>
+          </div>
+          <ol>
+            <li>「選手別」の「選手統合」、または選手詳細の「データ統合」を開きます。</li>
+            <li>統合後の表示の基準にする選手を選びます。</li>
+            <li>同じ人物として追加する登録を検索して選びます。</li>
+            <li>統合後に表示する名前と背番号を確認し、統合を確定します。</li>
+          </ol>
+          <p>
+            統合すると、試合数、1試合平均、試合別成績、シュート期待値、ゾーン、試投密度、成功密度が
+            1人分として再集計されます。各試合の選手名やbox score、受け取った共有ファイルの原本は変更しません。
+          </p>
+          <div class="tip">
+            <strong>後から戻せます</strong>
+            統合済みの選手詳細から、登録を個別に分離したり、統合全体を解除したりできます。
+          </div>
+          <div class="warning">
+            <strong>同名・同背番号だけで統合しないでください</strong>
+            別人の可能性があるため、本人だと確認できるデータだけを統合します。
+            同じ試合に両方の登録が選手として存在する場合は、記録を失わないよう統合できません。
           </div>
         </section>
 
         <section class="guide-section" id="share">
-          <h2>5. 取り込んだデータを再共有する</h2>
+          <h2>6. 取り込んだデータを再共有する</h2>
           <p>
             右上の共有ボタンから複数の試合または選手を選び、再度書き出せます。
             Readerは内容を編集せず、受け取ったデータを同じ形式で共有します。
@@ -164,7 +249,7 @@
         </section>
 
         <section class="guide-section" id="trash">
-          <h2>6. 削除・復元する</h2>
+          <h2>7. 削除・復元する</h2>
           <p>
             試合一覧で左へスワイプすると、ファイルをゴミ箱へ移動できます。
             右上のゴミ箱から復元または完全削除を選べます。
