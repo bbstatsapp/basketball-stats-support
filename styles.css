@@ -399,7 +399,7 @@ h1 {
 
 .flow-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -460,7 +460,7 @@ h1 {
   overflow: hidden;
   width: min(100%, 430px);
   justify-self: center;
-  background: #eef0f5;
+  background: #101722;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 24px;
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
@@ -474,6 +474,44 @@ h1 {
   padding: 10px 14px;
   color: #d7dee9;
   font-size: 12px;
+}
+
+.video-fallback {
+  margin-left: 10px;
+  color: #8ec7ff;
+  font-weight: 800;
+}
+
+.tour-steps {
+  display: grid;
+  margin: 20px 0 24px;
+  padding: 0;
+  gap: 9px;
+  list-style: none;
+}
+
+.tour-steps li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tour-steps li > span {
+  display: inline-grid;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  color: white;
+  background: var(--primary);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.guide-video {
+  width: min(100%, 520px);
+  margin: 26px auto 0;
 }
 
 .privacy-banner {
@@ -1063,8 +1101,7 @@ details[open] summary::after {
   }
 
   .device-shot,
-  .screenshot,
-  .video-frame {
+  .screenshot {
     background: #f0f2f7;
   }
 

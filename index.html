@@ -94,13 +94,13 @@
       <div class="container">
         <div class="section-header">
           <p class="section-kicker">Basic flow</p>
-          <h2>基本は4つの流れです</h2>
-          <p>最初にチームを用意すれば、あとは試合ごとに記録・保存・共有できます。</p>
+          <h2>まずは3つの流れを覚えます</h2>
+          <p>チーム設定、試合記録、スタッツ閲覧の順に進めれば、最初の試合を振り返れます。</p>
         </div>
         <div class="flow-grid">
           <article class="flow-step">
             <span class="step-number">1</span>
-            <h3>チームを登録</h3>
+            <h3>チーム設定</h3>
             <p>チーム名、ユニホーム、背番号と選手名をWriterへ登録します。</p>
           </article>
           <article class="flow-step">
@@ -110,13 +110,8 @@
           </article>
           <article class="flow-step">
             <span class="step-number">3</span>
-            <h3>保存して確認</h3>
-            <p>最終スコア、box score、シュートチャート、選手別成績を振り返ります。</p>
-          </article>
-          <article class="flow-step">
-            <span class="step-number">4</span>
-            <h3>Readerへ共有</h3>
-            <p>.bbstatsまたは.bbplayerを書き出し、FilesやAirDropなどで渡します。</p>
+            <h3>スタッツ閲覧</h3>
+            <p>途中集計または保存済み試合から、スコア、box score、選手別成績を確認します。</p>
           </article>
         </div>
       </div>
@@ -125,12 +120,17 @@
     <section class="section compact">
       <div class="container media-panel">
         <div class="section-header">
-          <p class="section-kicker">30-second tour</p>
-          <h2>実際の操作を見る</h2>
+          <p class="section-kicker">1-minute tour</p>
+          <h2>チーム設定からスタッツ閲覧まで</h2>
           <p>
-            Writerのホームから、チーム確認、試合設定、ライブ記録、保存済みスタッツへ進む様子です。
-            動画にはシミュレーター上のデモデータだけを使用しています。
+            実際のシミュレーターで、出場選手を決め、3P成功・AST・2P失敗を記録し、
+            Logと途中スタッツへ反映されるところまで操作しています。
           </p>
+          <ol class="tour-steps">
+            <li><span>1</span><strong>チーム・選手・ユニホームを確認</strong></li>
+            <li><span>2</span><strong>ラインナップ、得点、イベントを記録</strong></li>
+            <li><span>3</span><strong>Logとスタッツで結果を確認</strong></li>
+          </ol>
           <a class="button" href="writer.html">画面ごとの説明へ</a>
         </div>
         <figure class="video-frame">
@@ -139,13 +139,23 @@
             muted
             playsinline
             preload="metadata"
-            poster="assets/images/writer-home.png"
-            aria-label="Writerの基本操作を紹介する約30秒の動画"
+            poster="assets/images/writer-live.png"
+            aria-label="チーム設定、試合記録、スタッツ閲覧を紹介する約1分の動画"
           >
             <source src="assets/media/writer-walkthrough.mp4" type="video/mp4">
+            <track
+              default
+              kind="captions"
+              srclang="ja"
+              label="日本語"
+              src="assets/media/writer-walkthrough-ja.vtt"
+            >
             お使いのブラウザは動画再生に対応していません。
           </video>
-          <figcaption class="video-caption">約30秒・音声なし</figcaption>
+          <figcaption class="video-caption">
+            約1分・音声なし
+            <a class="video-fallback" href="assets/media/writer-walkthrough.mp4">動画を直接開く</a>
+          </figcaption>
         </figure>
       </div>
     </section>

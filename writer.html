@@ -39,6 +39,7 @@
         WriterはiPadの縦画面で使用します。
       </p>
       <nav class="anchor-nav" aria-label="ページ内ナビゲーション">
+        <a href="#tour">操作動画</a>
         <a href="#prepare">準備</a>
         <a href="#teams">チーム登録</a>
         <a href="#setup">試合設定</a>
@@ -52,6 +53,7 @@
     <div class="container guide-layout">
       <aside class="guide-toc" aria-label="目次">
         <strong>このページの内容</strong>
+        <a href="#tour">操作動画</a>
         <a href="#prepare">1. 最初の準備</a>
         <a href="#teams">2. チーム登録</a>
         <a href="#setup">3. 試合設定</a>
@@ -62,6 +64,43 @@
       </aside>
 
       <div class="guide-content">
+        <section class="guide-section" id="tour">
+          <h2>チーム設定 → 試合記録 → スタッツ閲覧</h2>
+          <p>
+            実際のシミュレーターで、お酒チームと寿司チームの試合を操作しています。
+            3P成功、AST、2P失敗がスコアとLogへ反映され、View Statusで途中スタッツを確認するまでの流れです。
+          </p>
+          <ol class="tour-steps">
+            <li><span>1</span><strong>チームのユニホームと選手を確認</strong></li>
+            <li><span>2</span><strong>出場選手を決め、得点とイベントを入力</strong></li>
+            <li><span>3</span><strong>Logを確認し、途中スタッツを表示</strong></li>
+          </ol>
+          <figure class="video-frame guide-video">
+            <video
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              poster="assets/images/writer-live.png"
+              aria-label="チーム設定、試合記録、スタッツ閲覧を紹介する約1分の動画"
+            >
+              <source src="assets/media/writer-walkthrough.mp4" type="video/mp4">
+              <track
+                default
+                kind="captions"
+                srclang="ja"
+                label="日本語"
+                src="assets/media/writer-walkthrough-ja.vtt"
+              >
+              お使いのブラウザは動画再生に対応していません。
+            </video>
+            <figcaption class="video-caption">
+              約1分・音声なし
+              <a class="video-fallback" href="assets/media/writer-walkthrough.mp4">動画を直接開く</a>
+            </figcaption>
+          </figure>
+        </section>
+
         <section class="guide-section" id="prepare">
           <h2>1. 最初の準備</h2>
           <p>
@@ -94,12 +133,18 @@
             背番号は0〜99と00に対応しています。同じチーム内で同じ背番号は登録できません。
             選手名は任意ですが、試合後に見分けやすい名前を付けることをおすすめします。
           </p>
-          <div class="screenshot-grid single">
+          <div class="screenshot-grid">
             <figure class="screenshot">
               <a href="assets/images/writer-teams.png">
                 <img src="assets/images/writer-teams.png" alt="Writerのチーム一覧画面" width="1668" height="2420" loading="lazy">
               </a>
               <figcaption>チーム一覧。タップで編集、左スワイプでゴミ箱へ移動できます。</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <a href="assets/images/writer-team-settings.png">
+                <img src="assets/images/writer-team-settings.png" alt="チーム名、ユニホーム、選手を確認するチーム編集画面" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>チーム編集。ユニホームと背番号・選手名をまとめて確認できます。</figcaption>
             </figure>
           </div>
           <div class="tip">
@@ -141,7 +186,7 @@
               <a href="assets/images/writer-live.png">
                 <img src="assets/images/writer-live.png" alt="Writerのライブ試合記録画面" width="1668" height="2420" loading="lazy">
               </a>
-              <figcaption>ライブ記録画面。上部にスコアとタイマー、中央にコート、下部に両チームの選手を表示します。</figcaption>
+              <figcaption>3P成功、AST、2P失敗を入力した直後。スコアは3–0となり、Undoも有効になります。</figcaption>
             </figure>
           </div>
 
@@ -171,6 +216,14 @@
             出場選手をスワイプすると、設定したイベント候補が表示されます。
             OFR、DFR、AST、ST、BLK、TO、FOULなどから選びます。
           </p>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-event-log.png">
+                <img src="assets/images/writer-event-log.png" alt="3ポイント成功、アシスト、2ポイント失敗が並ぶ試合Log" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>Logには、3P成功、AST、相手の2P失敗が時刻順に記録されています。</figcaption>
+            </figure>
+          </div>
           <div class="feature-list">
             <div class="feature-item"><strong>タイムアウト</strong><span>チームカードのメニューから入力</span></div>
             <div class="feature-item"><strong>ベンチテクニカル</strong><span>チームイベントとして記録</span></div>
@@ -208,6 +261,14 @@
           <div class="important">
             <strong>保存後の試合は閲覧専用です</strong>
             <p>Saveで確定した試合をライブ記録へ戻して編集することはできません。保存前にLogとスコアをご確認ください。</p>
+          </div>
+          <div class="screenshot-grid single">
+            <figure class="screenshot">
+              <a href="assets/images/writer-live-stats.png">
+                <img src="assets/images/writer-live-stats.png" alt="記録した3対0の途中スタッツ表示画面" width="1668" height="2420" loading="lazy">
+              </a>
+              <figcaption>View Statusの途中集計。3P成功と2P失敗がチーム合計・選手別box scoreへ反映されています。</figcaption>
+            </figure>
           </div>
           <div class="screenshot-grid">
             <figure class="screenshot">
