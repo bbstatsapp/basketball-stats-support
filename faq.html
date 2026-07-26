@@ -91,15 +91,21 @@
         </div>
         <div class="faq-list">
           <details>
-            <summary>.bbstatsと.bbplayerは何が違いますか？</summary>
+            <summary>.bbteam、.bbstats、.bbplayerは何が違いますか？</summary>
             <div class="details-body">
-              <p>.bbstatsは1試合全体、.bbplayerは1選手の複数試合成績を共有します。詳しくは「ファイル共有」をご覧ください。</p>
+              <p>.bbteamは1チームの登録情報をWriterへ、.bbstatsは1試合全体をReaderへ、.bbplayerは1選手の複数試合成績をReaderへ渡します。.bbteamに試合やスタッツは含まれません。詳しくは「ファイル共有」をご覧ください。</p>
+            </div>
+          </details>
+          <details>
+            <summary>登録したチームを別のWriterでも使えますか？</summary>
+            <div class="details-body">
+              <p>使えます。Writerの「チーム設定」で右上のチーム共有ボタンを選び、「チームを書き出す」から.bbteamを作成します。受け取る側は「チームを読み込む」から選択してください。読み込み後のチームは独立して保存され、端末間で自動同期はされません。</p>
             </div>
           </details>
           <details>
             <summary>同じファイルを何度も読み込むと重複しますか？</summary>
             <div class="details-body">
-              <p>同じID・同じ内容は重複保存されません。同じIDで内容が違う場合は、置き換えるか確認します。</p>
+              <p>同じ.bbteamのチーム情報と選手情報、または同じID・同じ内容の.bbstats／.bbplayerは重複保存されません。Readerで同じIDの内容が異なる場合は、置き換えるか確認します。</p>
             </div>
           </details>
           <details>

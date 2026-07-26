@@ -153,6 +153,12 @@
             <strong>ユニホームの色を細かく調整したい場合</strong>
             ホームの「設定」でカラー編集を詳細モードへ切り替えられます。
           </div>
+          <div class="tip">
+            <strong>別のWriterに登録済みチームを渡せます</strong>
+            チーム一覧右上のチーム共有ボタンから.bbteamを書き出すと、チーム名、カテゴリ、
+            淡色・濃色ユニホーム、背番号、選手名を別のWriterへまとめて渡せます。
+            試合やスタッツは含まれません。
+          </div>
         </section>
 
         <section class="guide-section" id="setup">
@@ -304,7 +310,23 @@
         </section>
 
         <section class="guide-section" id="share">
-          <h2>7. 試合や選手を共有する</h2>
+          <h2>7. チーム・試合・選手を共有する</h2>
+          <h3>チーム情報をWriterへ渡す</h3>
+          <p>
+            「チーム設定」右上のチーム共有ボタンから、1チーム分の登録情報を
+            <strong>.bbteam</strong>として書き出せます。複数チームもまとめて選択できます。
+          </p>
+          <ol>
+            <li>「チーム設定」を開き、右上のチーム共有ボタンを選びます。</li>
+            <li>「チームを書き出す」を選び、共有するチームへチェックを付けます。</li>
+            <li>右上の「共有」を選び、Files、AirDrop、メールなどの共有先を選びます。</li>
+          </ol>
+          <p>
+            受け取る側は、同じメニューの「チームを読み込む」から.bbteamを選びます。
+            Filesなどで.bbteamを直接Writerで開くこともできます。
+          </p>
+
+          <h3>試合・選手のスタッツをReaderへ渡す</h3>
           <p>
             試合詳細右上の共有ボタンから、1試合を<strong>.bbstats</strong>として書き出せます。
             選手詳細からは、1人分の試合別成績を<strong>.bbplayer</strong>として書き出せます。
@@ -317,7 +339,8 @@
           </ol>
           <div class="warning">
             <strong>共有ファイルには名前が含まれます</strong>
-            .bbstatsにはチーム名と選手名、.bbplayerには対象選手名などが含まれます。共有先を確認してから書き出してください。
+            .bbteamにはチーム名・背番号・選手名、.bbstatsにはチーム名と選手名、
+            .bbplayerには対象選手名などが含まれます。共有先を確認してから書き出してください。
           </div>
           <div class="button-row">
             <a class="button" href="sharing.html">共有ファイルの違いを見る</a>
